@@ -38,5 +38,13 @@ $randomnumber = rand(0, $max);
 echo $randomtext[$randomnumber] . '<br />';
 
 
+#Übung 6
+
+/*
+foreach ($_SERVER as $txt)
+    echo $txt . '<br />';
+*/
+
+
 
 ?>
