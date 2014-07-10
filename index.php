@@ -20,6 +20,8 @@ echo var_dump($ergebnis) . '<br />';
 
 #Übung 3 & 4
 
+//Eine Liste von Orten wird in ein <ul> Tag geschrieben
+
 $orte = ['M&#246;nchhof', 'Gols', 'Weiden', 'Neusiedl'];
 
 echo '<ul>';
@@ -31,20 +33,24 @@ echo '</ul><br />';
 
 #Übung 5
 
+//Ein zufallsindex vom Array wird ermittelt und dieser Wert wird ausgegeben
+
 $randomtext = ['TEXT', 'YOLO', 'ABC', 'JAN', 'CLUB MAGIC LIFE'];
 $max = count($randomtext) - 1;
 $randomnumber = rand(0, $max);
 
-echo $randomtext[$randomnumber] . '<br />';
+echo $randomtext[$randomnumber] . '<br /><br />';
 
 
-#Übung 6
+#Übung 6 & 7
+
+//Erstellt eine Tabelle mit allen Informationen zu $_SERVER
 
 /*
-foreach ($_SERVER as $txt)
-    echo $txt . '<br />';
+echo '<table border="1">';
+foreach ($_SERVER as $key => $txt)
+    echo '<tr><td>' . $key . '</td><td>' . $txt . '</td></tr>';
+echo '</table>';
 */
-
-
 
 ?>
