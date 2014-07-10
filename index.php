@@ -56,4 +56,31 @@ echo '</table>';
 include('other/something.php');
 require('other/anything123.php');
 
+
+#Übung 8
+
+$linklist = ['anything123.php', 'something.php'];
+
+foreach($linklist as $link){
+    echo <<<DOC
+        <a href="other/$link">$link</a><br>
+DOC;
+}
+
+echo '<br><br>';
+
+#Übung 9
+
+$zahl1 = 4;
+$zahl2 = 2;
+
+$ergebnis = $zahl1 % $zahl2;
+
+if($ergebnis > 0)
+    echo 'Zahl ist ungerade!';
+else
+    echo 'Zahl ist gerade';
+
+
+
 ?>
