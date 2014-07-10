@@ -27,4 +27,5 @@ foreach($orte as $ausgabe)
     echo '<li>' . $ausgabe . '</li>';
 
 echo '</ul>';
+echo 'ABC';
 ?>
