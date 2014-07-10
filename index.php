@@ -26,6 +26,17 @@ echo '<ul>';
 foreach($orte as $ausgabe)
     echo '<li>' . $ausgabe . '</li>';
 
-echo '</ul>';
-echo 'ABC';
+echo '</ul><br />';
+
+
+#Übung 5
+
+$randomtext = ['TEXT', 'YOLO', 'ABC', 'JAN', 'CLUB MAGIC LIFE'];
+$max = count($randomtext) - 1;
+$randomnumber = rand(0, $max);
+
+echo $randomtext[$randomnumber] . '<br />';
+
+
+
 ?>
