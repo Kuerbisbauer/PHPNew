@@ -53,4 +53,7 @@ foreach ($_SERVER as $key => $txt)
 echo '</table>';
 */
 
+include('other/something.php');
+require('other/anything123.php');
+
 ?>
