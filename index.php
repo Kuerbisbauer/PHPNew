@@ -69,7 +69,7 @@ DOC;
 
 echo '<br><br>';
 
-#Übung 9
+#Übung 5.1
 
 $zahl1 = 4;
 $zahl2 = 2;
@@ -79,9 +79,40 @@ $ergebnis = $zahl1 % $zahl2;
 if($ergebnis > 0)
     echo 'Zahl ist ungerade!';
 else
-    echo 'Zahl ist gerade';
+    echo 'Zahl ist gerade <br />';
 
-#Änderung TEST
+
+#Übung 5.4
+
+//Einmaleins mit while Schleife
+
+$zahl1 = 1;
+$zahl2 = 1;
+
+$ergebnis = 1;
+
+echo '<table border="1">';
+
+while($ergebnis < 100){
+
+    $ergebnis = $zahl1 * $zahl2;
+
+    if($ergebnis == 1)
+        echo "<tr><td>$ergebnis</td>";
+    else {
+        if($zahl1 <= 10)
+            echo "<td>$ergebnis</td>";
+    }
+
+    if($zahl1 == 10){
+        $zahl1 = 1;
+        $zahl2++;
+        echo '</tr><tr>';
+    }
+    else
+        $zahl1++;
+}
+echo '</table>';
 
 
 ?>
