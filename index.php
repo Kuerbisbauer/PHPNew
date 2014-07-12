@@ -115,4 +115,21 @@ while($ergebnis < 100){
 echo '</table>';
 
 
+#Übung 5.5
+
+//Funktion mit Parameter
+
+/*
+ * Der Inhalt eines Arrays wird innerhalb
+ * eines <pre>-Tags ausgegeben.
+ */
+function readArray($array) {
+    echo '<pre>';
+    print_r($array);
+    echo'</pre>';
+}
+
+$array = ['A', 'B', 'C', 'D', 'E'];
+readArray($array);
+
 ?>
