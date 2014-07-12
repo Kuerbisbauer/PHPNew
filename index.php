@@ -143,4 +143,23 @@ function getAllStunden($stunden, $kosten = 15){
 }
 
 getAllStunden(8, 10);
+
+
+echo '<br />';
+#Übung 6.2
+
+//Mithilfe von printf() soll eine Zahl mindestens aus 3 Stellen bestehen
+
+printf("%03d", 7);
+echo '<br /><br />';
+
+
+#Übung 7.1
+
+//Einfaches Formular mit Vorname, Nachname, Emailadresse und Telefonnummer
+
+include('forms/standard.php');
+
+
+
 ?>
