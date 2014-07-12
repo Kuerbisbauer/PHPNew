@@ -132,4 +132,15 @@ function readArray($array) {
 $array = ['A', 'B', 'C', 'D', 'E'];
 readArray($array);
 
+
+#Übung 5.6
+
+//Funktion Arbeitskosten
+
+function getAllStunden($stunden, $kosten = 15){
+    $ergebnis = $stunden * $kosten;
+    echo "Gesamtbetrag von $stunden Stunden: {$ergebnis}&euro; ";
+}
+
+getAllStunden(8, 10);
 ?>
